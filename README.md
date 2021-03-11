@@ -57,4 +57,4 @@ El proyecto también tiene cuatro scripts de python:
 
 ## Conjunto de datos
 
-El conjunto de datos contiene imágenes extraídas de los vídeos de colonoscopia. Las imágenes contienen diferentes tipos de pólipos y puede ser descargada desde [aquí](https://polyp.grand-challenge.org/CVCClinicDB/).
+CVC-ClinicDB es una base de datos de fotogramas extraídos de videos de colonoscopia. Estos fotogramas contienen varios ejemplos de pólipos. Además de las imágenes, se proporciona la una máscara correspondiente a la región cubierta por el pólipo. Las imágenes contienen diferentes tipos de pólipos y puede ser descargada desde [aquí](https://polyp.grand-challenge.org/CVCClinicDB/).
