@@ -27,6 +27,8 @@ Las imágenes con pólipo se dan a un modelo entrenado y nos dará una imagen bi
 
 **La segmentación semántica** es uno de los desafíos en la investigación de la visión computarizada. Se puede considerar como un problema de clasificación, pero a nivel de píxel porque necesita predecir la etiqueta o clase de cada píxel de una imagen.
 
+![unet](https://user-images.githubusercontent.com/34296084/110797935-a657e880-8247-11eb-9e69-abf36a15bfcf.png)
+
 ## Qué es UNet
 
 La **UNet** es una red neuronal totalmente convolucional que fue desarrollada por **Olaf Ronneberger** en el Departamento de Ciencias de la Computación de la Universidad de Friburgo, Alemania. Fue especialmente desarrollado para la segmentación de imágenes biomédicas.
