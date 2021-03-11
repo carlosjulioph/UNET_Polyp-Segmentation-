@@ -37,3 +37,5 @@ La **UNet** es una red neuronal totalmente convolucional que fue desarrollada po
 La segmentación semántica es una tarea que avanza hacia la comprensión completa de la escena aprendiendo a predecir lo que hay en la imagen. La importancia de la comprensión de la escena radica en sus aplicaciones en el campo de la visión por ordenador, tales como vehículos autónomos, interacción humano-ordenador, robots autónomos, realidad aumentada, sistemas de reconocimiento facial, etc.
 
 ![unet](https://user-images.githubusercontent.com/34296084/110797935-a657e880-8247-11eb-9e69-abf36a15bfcf.png)
+
+La UNet sigue una arquitectura simétrica con forma de la letra inglesa "U". Es una mejora con respecto a [las redes totalmente convolucionales para la segmentación semántica](https://arxiv.org/pdf/1605.06211.pdf) por Evan Shelhamer, Jonathan Long, Trevor Darrell.
