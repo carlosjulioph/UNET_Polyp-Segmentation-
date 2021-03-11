@@ -42,16 +42,19 @@ La UNet sigue una arquitectura simétrica con forma de la letra inglesa "U". Es 
 
 ## Estructura de proyecto
 
-El proyecto tiene cuatro carpetas:
+El proyecto tiene tres carpetas:
 
 - **CVC-612/:** Consta del conjunto de datos que vamos a usar para este proyecto. Contiene dos subcarpetas: imágenes y máscaras. Como su nombre indica, estas subcarpeta contienen las imágenes y máscaras.
--  **archivos/:** Esta carpeta se utiliza para almacenar el archivo CSV que contiene toda la información mientras el modelo está entrenando. También almacena el archivo de peso del modelo.
-- **registros/:** contiene los archivos de registro tensorboard.
-- **resultados/:** Se utiliza para almacenar los resultados después de realizar predicciones en el conjunto de datos de prueba.
+-  **files/:** Esta carpeta se utiliza para almacenar el archivo CSV que contiene toda la información mientras el modelo está entrenando. También almacena el archivo de peso del modelo.
+- **results/:** Se utiliza para almacenar los resultados después de realizar predicciones en el conjunto de datos de prueba.
 
-El proyecto también tiene cuatro secuencias de comandos python:
+El proyecto también tiene cuatro scripts de python:
 
 - **data.py:** Este archivo contiene el código para cargar el conjunto de datos, leyendo las imágenes y máscaras. También se utiliza para crear una canalización tf.data para el conjunto de datos de entrenamiento, validación y pruebas.
-- **model.py:** Este archivo tiene el código de la arquitectura UNet que va a segmentar las imágenes polip.
+- **model.py:** Este archivo tiene el código de la arquitectura UNet que va a segmentar las imágenes.
 - **train.py:** Este archivo ayuda al modelo a entrenar en el conjunto de datos de entrenamiento. También se utiliza guardar el modelo que se utiliza más adelante para realizar predicciones en el dataset de prueba.
 - **predict.py:** Una vez finalizado el entrenamiento, este archivo se utiliza para realizar predicciones en el conjunto de datos de prueba.
+
+## Conjunto de datos
+
+El conjunto de datos contiene imágenes extraídas de los vídeos de colonoscopia. Las imágenes contienen diferentes tipos de pólipos y puede ser descargada desde [aquí](https://polyp.grand-challenge.org/CVCClinicDB/).
