@@ -20,3 +20,5 @@ La mayoría de los pólipos son [benignos,](https://www.healthline.com/health/be
 ## **La segmentación de pólipos**
 
 Las imágenes con pólipo se dan a un modelo entrenado y nos dará una imagen binaria o máscara. Esta imagen binaria consta de píxeles en blanco y negro, donde el blanco denota el pólipo en la imagen y el negro denota el fondo.
+
+![Sin SS](https://user-images.githubusercontent.com/34296084/110796091-94754600-8245-11eb-8a44-d03820478892.png)
