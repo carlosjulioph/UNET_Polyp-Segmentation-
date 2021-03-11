@@ -22,3 +22,9 @@ La mayoría de los pólipos son [benignos,](https://www.healthline.com/health/be
 Las imágenes con pólipo se dan a un modelo entrenado y nos dará una imagen binaria o máscara. Esta imagen binaria consta de píxeles en blanco y negro, donde el blanco denota el pólipo en la imagen y el negro denota el fondo.
 
 ![Sin SS](https://user-images.githubusercontent.com/34296084/110796091-94754600-8245-11eb-8a44-d03820478892.png)
+
+## Qué es la segmentación semántica
+
+**La segmentación semántica** es uno de los desafíos en la investigación de la visión computarizada. Se puede considerar como un problema de clasificación, pero a nivel de píxel porque necesita predecir la etiqueta o clase de cada píxel de una imagen.
+
+La segmentación semántica es una tarea que avanza hacia la comprensión completa de la escena aprendiendo a predecir lo que hay en la imagen. La importancia de la comprensión de la escena radica en sus aplicaciones en el campo de la visión por ordenador, tales como vehículos autónomos, interacción humano-ordenador, robots autónomos, realidad aumentada, sistemas de reconocimiento facial, etc.
