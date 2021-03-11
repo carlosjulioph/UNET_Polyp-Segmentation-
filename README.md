@@ -39,3 +39,19 @@ La segmentación semántica es una tarea que avanza hacia la comprensión comple
 ![unet](https://user-images.githubusercontent.com/34296084/110797935-a657e880-8247-11eb-9e69-abf36a15bfcf.png)
 
 La UNet sigue una arquitectura simétrica con forma de la letra inglesa "U". Es una mejora con respecto a [las redes totalmente convolucionales para la segmentación semántica](https://arxiv.org/pdf/1605.06211.pdf) por Evan Shelhamer, Jonathan Long, Trevor Darrell.
+
+## Estructura de proyecto
+
+El proyecto tiene cuatro carpetas:
+
+- **CVC-612/:** Consta del conjunto de datos que vamos a usar para este proyecto. Contiene dos subcarpetas: imágenes y máscaras. Como su nombre indica, estas subcarpeta contienen las imágenes y máscaras.
+-  **archivos/:** Esta carpeta se utiliza para almacenar el archivo CSV que contiene toda la información mientras el modelo está entrenando. También almacena el archivo de peso del modelo.
+- **registros/:** contiene los archivos de registro tensorboard.
+- **resultados/:** Se utiliza para almacenar los resultados después de realizar predicciones en el conjunto de datos de prueba.
+
+El proyecto también tiene cuatro secuencias de comandos python:
+
+- **data.py:** Este archivo contiene el código para cargar el conjunto de datos, leyendo las imágenes y máscaras. También se utiliza para crear una canalización tf.data para el conjunto de datos de entrenamiento, validación y pruebas.
+- **model.py:** Este archivo tiene el código de la arquitectura UNet que va a segmentar las imágenes polip.
+- **train.py:** Este archivo ayuda al modelo a entrenar en el conjunto de datos de entrenamiento. También se utiliza guardar el modelo que se utiliza más adelante para realizar predicciones en el dataset de prueba.
+- **predict.py:** Una vez finalizado el entrenamiento, este archivo se utiliza para realizar predicciones en el conjunto de datos de prueba.
